@@ -36,19 +36,31 @@
 //     console.log(`${str} is a number.`);
 // };
 
-// parseInt(): Brings out the number only.
-const padding = "2.654px";
-const paddingInNumber = parseInt(padding);
-const paddingInNumber2 = parseFloat(padding);
-console.log(paddingInNumber);
-console.log(paddingInNumber2);
+// // parseInt(): Brings out the number only.
+// const padding = "2.654px";
+// const paddingInNumber = parseInt(padding);
+// const paddingInNumber2 = parseFloat(padding);
+// console.log(paddingInNumber);
+// console.log(paddingInNumber2);
 
-// Math
-console.log(Math.pow(4, 6));
-console.log(Math.sqrt(144));
-console.log(Math.abs(-81));
-const floatNumber = 3.56;
-console.log(Math.round(floatNumber));
-console.log(Math.ceil(floatNumber));
-console.log(Math.floor(floatNumber));
-console.log(Math.trunc(floatNumber));
+// // Math
+// console.log(Math.pow(4, 6));
+// console.log(Math.sqrt(144));
+// console.log(Math.abs(-81));
+// const floatNumber = 3.56;
+// console.log(Math.round(floatNumber));
+// console.log(Math.ceil(floatNumber));
+// console.log(Math.floor(floatNumber));
+// console.log(Math.trunc(floatNumber));
+
+// Dates
+const currentDate = new Date();
+console.log(currentDate);
+console.log(currentDate.getFullYear());
+console.log(currentDate.getMonth());
+console.log(currentDate.getDate());
+console.log(currentDate.getDay());
+console.log(currentDate.getHours());
+console.log(currentDate.getMinutes());
+console.log(currentDate.getSeconds());
+console.log(currentDate.getMilliseconds());
