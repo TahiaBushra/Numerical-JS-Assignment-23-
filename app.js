@@ -81,3 +81,18 @@
 // // setInterval()
 // const myInterval = setInterval(() => { console.log(new Date().toLocaleTimeString()); }, 1000);
 // setTimeout(() => { clearInterval(myInterval); }, 10000);
+
+// Clock
+const clock = document.querySelector(".clock");
+let myInterval;
+function buildClock() {
+    myInterval =
+        setInterval(() => { const time = new Date().toLocaleTimeString("en-UK", { hour: "2-digit", minute: "2-digit", second: "2-digit", dayPeriod: "long" }); clock.textContent = time; }, 1000); stopClock();
+};
+function stopClock() {
+    setTimeout(() => {
+        clearInterval(myInterval);
+        clock.textContent = "Clock Stopped";
+        setTimeout(buildClock, 5000);
+    }, 10000);
+}; buildClock();
