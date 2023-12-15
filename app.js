@@ -10,12 +10,12 @@
 // const decimalOfBinaryNumber = parseInt(binaryStr, 2);
 // console.log(decimalOfBinaryNumber);
 
-// // Binary To Decimal
+// // Octal To Decimal
 // const octalStr = "66";
 // const decimalOfOctalNumber = parseInt(octalStr, 8);
 // console.log(decimalOfOctalNumber);
 
-// // Binary To Decimal
+// // Hexadecimal To Decimal
 // const hexaStr = "36";
 // const decimalOfHexaNumber = parseInt(hexaStr, 16);
 // console.log(decimalOfHexaNumber);
@@ -53,14 +53,31 @@
 // console.log(Math.floor(floatNumber));
 // console.log(Math.trunc(floatNumber));
 
-// Dates
-const currentDate = new Date();
-console.log(currentDate);
-console.log(currentDate.getFullYear());
-console.log(currentDate.getMonth());
-console.log(currentDate.getDate());
-console.log(currentDate.getDay());
-console.log(currentDate.getHours());
-console.log(currentDate.getMinutes());
-console.log(currentDate.getSeconds());
-console.log(currentDate.getMilliseconds());
+// // Dates
+// const currentDate = new Date();
+// console.log(currentDate);
+// console.log(currentDate.getFullYear());
+// console.log(currentDate.getMonth());
+// console.log(currentDate.getDate());
+// console.log(currentDate.getDay());
+// console.log(currentDate.getHours());
+// console.log(currentDate.getMinutes());
+// console.log(currentDate.getSeconds());
+// console.log(currentDate.getMilliseconds());
+
+// // Formatted Date
+// const currentDate = new Date();
+// const formattedDate = currentDate.toLocaleDateString(
+//     "bn-BD", {
+//     year: "numeric", month: "long", day: "2-digit",
+// }
+// ); console.log(formattedDate);
+
+// // // setTimeout
+// // function greet() {
+// //     console.log("Assalamualaikum");
+// // }; setTimeout(greet, 3000);
+
+// // setInterval()
+// const myInterval = setInterval(() => { console.log(new Date().toLocaleTimeString()); }, 1000);
+// setTimeout(() => { clearInterval(myInterval); }, 10000);
