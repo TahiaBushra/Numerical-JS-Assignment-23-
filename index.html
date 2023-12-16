@@ -6,10 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignmet-23</title>
 </head>
+<style>
+    body {
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .clock {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        font-size: 3rem;
+        color: whitesmoke;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, #fa8e92, #fad0c4);
+        transition: background-color 0.5s ease;
+    }
+
+    .clock:hover {
+        background: linear-gradient(45deg, #7aebff, #063181);
+    }
+</style>
 
 <body>
     <div class="clock"></div>
     <script src="./app.js"></script>
+    <script src="./calculator.js"></script>
 </body>
 
 </html>
