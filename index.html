@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Assignmet-23</title>
 </head>
-<style>
+<!-- <style>
     body {
         background-color: white;
         justify-content: center;
@@ -38,10 +39,35 @@
     .clock:hover {
         background: linear-gradient(45deg, #7aebff, #063181);
     }
-</style>
+</style> -->
 
 <body>
-    <div class="clock"></div>
+    <div class="calculator">
+        <input type="text" class="display" disabled />
+        <div class="keys">
+            <button onclick="allClear()">AC</button>
+            <button onclick="deleteInput()">DEL</button>
+            <button onclick="showExpression('%')">%</button>
+            <button onclick="showExpression('/')">/</button>
+            <button onclick="showExpression('1')">1</button>
+            <button onclick="showExpression('2')">2</button>
+            <button onclick="showExpression('3')">3</button>
+            <button onclick="showExpression('+')">+</button>
+            <button onclick="showExpression('4')">4</button>
+            <button onclick="showExpression('5')">5</button>
+            <button onclick="showExpression('6')">6</button>
+            <button onclick="showExpression('-')">-</button>
+            <button onclick="showExpression('7')">7</button>
+            <button onclick="showExpression('8')">8</button>
+            <button onclick="showExpression('9')">9</button>
+            <button onclick="showExpression('*')">*</button>
+            <button onclick="showExpression('0')">0</button>
+            <button onclick="showExpression('00')">00</button>
+            <button onclick="calculate('=')">=</button>
+            <button onclick="showExpression('.')">.</button>
+        </div>
+    </div>
+    <!-- <div class="clock"></div> -->
     <script src="./app.js"></script>
     <script src="./calculator.js"></script>
 </body>

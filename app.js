@@ -83,20 +83,20 @@
 // setTimeout(() => { clearInterval(myInterval); }, 10000);
 
 // Clock
-const clock = document.querySelector(".clock");
-function buildClock() {
-    const myInterval =
-        setInterval(() => { const time = new Date().toLocaleTimeString("en-UK", { hour: "2-digit", minute: "2-digit", second: "2-digit", dayPeriod: "long" }); clock.textContent = time; }, 1000); stopClock(myInterval);
-};
-function stopClock(myInterval) {
-    setTimeout(() => {
-        clearInterval(myInterval);
-        clock.textContent = "Clock Stopped";
-        clock.style.background = 'linear-gradient(45deg, #f6d365, #fda085)';
-        setTimeout(() => {
-            clock.style.background = 'linear-gradient(45deg, #ff9a9e, #fad0c4)';
-            buildClock();
-        }, 5000);
-    }, 10000);
-}
-buildClock();
+// const clock = document.querySelector(".clock");
+// function buildClock() {
+//     const myInterval =
+//         setInterval(() => { const time = new Date().toLocaleTimeString("en-UK", { hour: "2-digit", minute: "2-digit", second: "2-digit", dayPeriod: "long" }); clock.textContent = time; }, 1000); stopClock(myInterval);
+// };
+// function stopClock(myInterval) {
+//     setTimeout(() => {
+//         clearInterval(myInterval);
+//         clock.textContent = "Clock Stopped";
+//         clock.style.background = 'linear-gradient(45deg, #f6d365, #fda085)';
+//         setTimeout(() => {
+//             clock.style.background = 'linear-gradient(45deg, #ff9a9e, #fad0c4)';
+//             buildClock();
+//         }, 5000);
+//     }, 10000);
+// }
+// buildClock();
