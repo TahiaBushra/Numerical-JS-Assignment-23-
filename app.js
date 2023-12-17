@@ -53,6 +53,11 @@
 // console.log(Math.floor(floatNumber));
 // console.log(Math.trunc(floatNumber));
 
+// Math.random()
+// console.log(Math.random());
+// console.log(Math.random() * 100);
+// console.log(Math.ceil(Math.random() * 100));
+
 // // Dates
 // const currentDate = new Date();
 // console.log(currentDate);
@@ -100,3 +105,12 @@
 //     }, 10000);
 // }
 // buildClock();
+
+// Random Password
+const randomPassGen = (digitLimit = 6) => {
+    const materials = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+-*/!@#$%^&*()_=[]{}:;'<>?.";
+    let pass = "";
+    for (let i = 0; i <= digitLimit; i++) {
+        pass += materials[Math.ceil(Math.random() * materials.length - 1)];
+    }; return pass;
+}; console.log(randomPassGen(8));
